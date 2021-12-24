@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { NgChartsModule } from 'ng2-charts';
+
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { CardComponent } from './shared/card/card.component';
@@ -16,7 +19,8 @@ import { CardComponent } from './shared/card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
