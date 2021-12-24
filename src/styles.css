@@ -2,3 +2,16 @@
 :root{
     --color-primario: #3DD1F2;
 }
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* Por alguna razon no me funciona estas modificaciones list-group-item
+por lo que los pongo aqui, son de menu.component */
+.list-group-item:hover{
+    cursor: pointer ;
+}
+@media (max-width: 480px) {
+    li.list-group-item{
+        padding-left: 0;
+    }
+}
