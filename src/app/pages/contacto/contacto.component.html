@@ -3,10 +3,17 @@
 <div [ngStyle]="{'height':'100%'}" class="d-flex align-items-center w-100 justify-content-evenly">
     <div class="row">
 
-        <div class="col-12 col-md-4 m-4"  *ngFor="let info of informacion" >
-            <a [href]="info.link" target="_blank" >
-                <img [ngStyle]="{'width':'8rem'}" [src]="info.ruta" [alt]="'logo'+info.nombre">
-            </a>
+        <div class="col-12 col-md-6 my-4"  *ngFor="let info of informacion" >
+            
+                <div class="d-flex flex-column justify-content-center align-items-center" >
+                    <a [href]="info.link" target="_blank" >
+                        <img [ngStyle]="{'width':'8rem'}" [src]="info.ruta" [alt]="'logo'+info.nombre">
+                    </a>
+                    <span *ngIf="info.nombre == 'whatsapp'" >+569 889 84972</span>
+                    <span *ngIf="info.nombre == 'gmail'" >matias.abarca2018@gmail.com</span>
+                </div>
+
+            
         </div>
 
     </div>
