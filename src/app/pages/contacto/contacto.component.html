@@ -1,1 +1,13 @@
-<p>contacto works!</p>
+<h2>Contactame</h2>
+
+<div [ngStyle]="{'height':'100%'}" class="d-flex align-items-center w-100 justify-content-evenly">
+    <div class="row">
+
+        <div class="col-12 col-md-4 m-4"  *ngFor="let info of informacion" >
+            <a [href]="info.link" target="_blank" >
+                <img [ngStyle]="{'width':'8rem'}" [src]="info.ruta" [alt]="'logo'+info.nombre">
+            </a>
+        </div>
+
+    </div>
+</div>
