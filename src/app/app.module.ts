@@ -9,18 +9,21 @@ import { NgChartsModule } from 'ng2-charts';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { CardComponent } from './shared/card/card.component';
+import { CurriculumComponent } from './shared/curriculum/curriculum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     MenuComponent,
-    CardComponent
+    CardComponent,
+    CurriculumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgChartsModule
+    NgChartsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-    --color-primario: #3DD1F2;
+    --color-primario: #7FEFBD;
+    --color-primario-oscuro: #1BDA84;
 }
 body{
     font-family: 'Roboto Condensed', sans-serif;

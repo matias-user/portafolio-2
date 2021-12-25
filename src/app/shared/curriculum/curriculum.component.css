@@ -1,0 +1,16 @@
+.column-left{
+    background-color: var(--color-primario);
+    height: 100%;
+    min-height: 100vh;
+}
+.fondo-oscuro{
+    background-color: var(--color-primario-oscuro);
+    width: 100%;
+    padding: .2rem;
+}
+.bg-verde{
+    background-color: var(--color-primario);
+}
+section{
+    background-color: #F3EFE0;
+}

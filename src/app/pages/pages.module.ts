@@ -6,14 +6,16 @@ import { ProyectoComponent } from './proyecto/proyecto.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
 
+
 @NgModule({
   declarations: [
     ProyectoComponent,
     ContactoComponent
+    
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
   ]
 })
 export class PagesModule { }
