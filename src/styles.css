@@ -16,3 +16,11 @@ por lo que los pongo aqui, son de menu.component */
         padding-left: 0;
     }
 }
+.list-group-item{
+    text-shadow: 1px 1px black;
+    color: #F4F6F7;
+    background-color: #28282B;
+}
+.active2{
+    background-color: var(--color-primario);
+}
