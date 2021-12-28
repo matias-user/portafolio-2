@@ -6,6 +6,9 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
+h1, h2, h3, h4{
+    margin-bottom: 0;
+}
 /* Por alguna razon no me funciona estas modificaciones list-group-item
 por lo que los pongo aqui, son de menu.component */
 .list-group-item:hover{
@@ -21,6 +24,14 @@ por lo que los pongo aqui, son de menu.component */
     color: #F4F6F7;
     background-color: #28282B;
 }
+.bg-primario{
+    background-color: var(--color-primario);
+}
 .active2{
     background-color: var(--color-primario);
+    color: black;
+    text-shadow: 1px 1px white ;
+}
+.text-green{
+    color: var(--color-primario-oscuro);
 }
