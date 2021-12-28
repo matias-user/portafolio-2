@@ -1,9 +1,9 @@
-<h2>Contactame</h2>
+<h2 class="text-uppercase" >Contactame</h2>
 <hr>
 <section class="container" >
 
     <div [ngStyle]="{'height':'83vh'}" class="d-flex align-items-center 
-                                            w-100 justify-content-evenly bg-primario">
+                                            w-100 justify-content-evenly bg-primario rounded">
         <div class="row">
     
             <div class="col-12 col-md-6 my-4 "  *ngFor="let info of informacion" >
@@ -11,11 +11,13 @@
                     <div class=" d-flex flex-column animate__animated animate__pulse 
                             justify-content-center align-items-center" >
                         <a [href]="info.link" target="_blank" >
-                            <img [ngStyle]="{'width':'8rem'}" class="rounded" 
+                            <img [ngStyle]="{'width':'8rem'}" class="rounded d-block" 
                                 [src]="info.ruta" [alt]="'logo'+info.nombre">
+                                <span *ngIf="info.nombre == 'linkedin'" >Click me</span>
                         </a>
                         <span *ngIf="info.nombre == 'whatsapp'" >+569 889 84972</span>
                         <span *ngIf="info.nombre == 'gmail'" >matias.abarca2018@gmail.com</span>
+
                     </div>
     
                 
