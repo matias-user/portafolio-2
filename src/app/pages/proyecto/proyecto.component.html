@@ -4,18 +4,18 @@
     <div class="row">
         <div class="col-sm-6 col-12 col-md-4 gap-3 mt-3" *ngFor="let item of proyectosArr" >
             <div class="card shadow rounded" >
-                <img src="..." class="card-img-top" alt="...">
+                <img [src]="item.imagen" class="card-img-top" alt="imagen sitio web">
                 <div class="card-body">
                   <h5 class="card-title">{{ item.titulo }}</h5>
                   <span *ngFor="let badge of item.badges" class="badge rounded-pill bg-primary mx-1">{{badge}}</span>
                 </div>
                 <div class="card-footer">
-                    <a [href]=" item.linkWeb " class="btn btn-primary mt-1 ">
+                    <a [href]=" item.linkWeb" target="_blank" class="btn btn-dark mt-1 ">
                         Ir a proyect
                         <i class="fab fa-internet-explorer"></i>
                     </a>
 
-                    <a [href]=" item.repositorio " class="btn btn-primary mt-1 float-lg-end">
+                    <a [href]=" item.repositorio" target="_blank" class="btn btn-dark mt-1 float-lg-end">
                         <i class="fab fa-github"></i>
                         Repositorio
                     </a>

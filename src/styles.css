@@ -25,7 +25,7 @@ por lo que los pongo aqui, son de menu.component */
     background-color: #28282B;
 }
 .bg-primario{
-    background-color: var(--color-primario-oscuro);
+    background-color: var(--color-primario);
 }
 .active2{
     background-color: var(--color-primario);
