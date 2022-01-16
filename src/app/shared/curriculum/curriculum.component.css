@@ -19,15 +19,15 @@ section{
 }
 .list-item-padding-0{
     padding: 0;
+    background-color: transparent;
 }
 .w-40{
     width: 40%;
-}
-.link-mio{
-    color: var(--color-primario-oscuro);
-    text-decoration: none;
 }
 p{
     padding: 0;
     margin: 0;
 }
+.list-group-item-decoration{
+    list-style: circle;
+} 
