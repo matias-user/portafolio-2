@@ -9,6 +9,7 @@ body{
 h1, h2, h3, h4{
     margin-bottom: 0;
 }
+
 /* Por alguna razon no me funciona estas modificaciones list-group-item
 por lo que los pongo aqui, son de menu.component */
 .list-group-item:hover{
@@ -19,7 +20,7 @@ por lo que los pongo aqui, son de menu.component */
         padding-left: 0;
     }
 }
-.list-group-item{
+.list-group-item-color{
     text-shadow: 1px 1px black;
     color: #F4F6F7;
     background-color: #28282B;

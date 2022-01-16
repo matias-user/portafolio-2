@@ -1,36 +1,79 @@
 <section>
         <div class="row">
 
-            <div class="col-4 px-0 column-left shadow">
-                <h1 class="text-white text-center" >Matías Abarca Morales</h1>
-                <div class="fondo-oscuro">
-                    <h3>Informacion de contacto</h3>
+            <div class="col-4 px-0 column-left rounded">
+                <h1 class="text-white text-center fw-bold" >Matías Abarca Morales</h1>
+                <div class="fondo-oscuro rounded">
+                    <h3 class="text-uppercase fw-bold" >Datos Personales</h3>
                 </div>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item bg-verde">+569 88984972</li>
-                    <li class="list-group-item bg-verde">matias.abarca2018@gmail.com</li>
-                    <li class="list-group-item bg-verde">Santiago, Quinta Normal</li>
+                    <li class="list-group-item list-group-item-color">+569 88984972</li>
+                    <li class="list-group-item list-group-item-color">matias.abarca2018@gmail.com</li>
+                    <li class="list-group-item list-group-item-color">Santiago, Quinta Normal</li>
                 </ul>
-                <div class="fondo-oscuro">
-                    <h3  >Habilidades</h3>
+                <div class="fondo-oscuro rounded">
+                    <h3 class="text-uppercase fw-bold" >Habilidades</h3>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-verde">JavaScript</li>
-                    <li class="list-group-item bg-verde">Angular</li>
-                    <li class="list-group-item bg-verde">Bootstrap</li>
-                    <li class="list-group-item bg-verde">NodeJS</li>
-                    <li class="list-group-item bg-verde">C#</li>
 
+                    <li *ngFor="let tecno of tecnologias" 
+                        class="list-group-item list-group-item-color d-flex justify-content-between">
+                        <p>{{tecno.nombre}}</p>
+                        <img [ngStyle]="{ 'width':'2.2rem' }" [ngClass]="{'bg-white': tecno.nombre == 'Express'}"
+                            src="{{tecno.linkImagen}}" alt="icono lenguaje"> 
+                    </li>
                 </ul>
 
             </div>
-            <div class="col-1">
-                
-            </div>
-            <div class="col-7">
-                <h1>hola</h1>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-5 d-flex align-items-center">
+                        <a [href]="linkPortafolio" target="_blank" 
+                            class="me-3 fw-bold text-uppercase link-mio btn border border-black" >Portafolio Web</a>
+                        <a [href]="linkGitHub" target="_blank" 
+                            class="fw-bold text-uppercase link-mio btn border border-black" >Repositorio github</a>
 
+                    </div>
+                    <div class="col-7 text-center">
+
+                        <img [src]="urlImagenPerfil" class="w-40 rounded-foto foto-perfil " alt="">
+                    </div>
+                </div>
+
+                <p class="text-justify mb-0" >
+                    Tengo 26 años y busco mi primera oportunidad 
+                    como desarrollador de software junior, mi formación es egresado de analista programador en 
+                    el instituto Esucomex, autodidacta aprendiendo en cursos de pago 
+                    como Udemy y gratis como microsoft courses, freeCodeCamp, soloLearn.
+                    Y mi experiencia laboral ha sido en áreas administrativas.
+                </p>
+                <hr class="mb-0" >
+                <h4 class="text-start fw-bold" >Formación académica</h4>
+                <ul class="list-group list-group-flush text-start">
+                    <li class="list-group-item list-item-padding-0">Egresado de analista programador en el instituto Esucomex año 2021</li>
+                    <li class="list-group-item list-item-padding-0">Cursos finalizados en udemy como Angular, JavaScript, ,TypeScript, ingles básico, </li>
+                    <li class="list-group-item list-item-padding-0">Varios proyectos pequeños con javascript como consumo y 
+                        muestra de información de apis, dos mas grandes con angular y firebase desarrollando crud, registro e inicio de sesión </li>
+                </ul>
+                <hr class="mb-0"  >
+                <h4 class="text-end fw-bold" >Experiencia Laboral</h4>
+                <ul class="list-group list-group-flush text-start">
+                    <li class="list-group-item list-item-padding-0">Asistente de producción en Sermecoop ltda, 8 meses desde el 03/03/2020 a 
+                        15-11-2020.
+                    </li>
+                    <li class="list-group-item list-item-padding-0">
+                        Asistente de Cuentas por pagar en Cial Alimentos S.A. 2 años y 3 meses desde 04-10-2017 a
+                        08-01-2019.
+                    </li>
+                    <li class="list-group-item list-item-padding-0">
+                        Junior Administrativo Empresa Curifor S.A. 7 meses desde 06/03/2017 a 31/09/2017.    
+                    </li>
+                    <li class="list-group-item list-item-padding-0">
+                        Asistente de Finanzas Empresa Cial Alimentos S.A. 1 año y 6 meses desde 01/05/2015 a 30/11/2016. 
+                    </li>
+                </ul>
             </div>
+
 
         </div>
 
